@@ -11,4 +11,4 @@ Sorting Algorithms
 
 -> Merge Sort ---> O(nlogn)
 
--> Quick Sort --->
+-> Quick Sort ---> O(n^2)
