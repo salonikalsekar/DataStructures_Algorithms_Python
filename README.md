@@ -9,6 +9,6 @@ Sorting Algorithms
 
 -> Insertion Sort ---> O(n^2)
 
--> Merge Sort ---> 
+-> Merge Sort ---> O(nlogn)
 
 -> Quick Sort --->
