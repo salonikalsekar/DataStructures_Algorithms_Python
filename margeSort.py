@@ -1,3 +1,4 @@
+#Merge the sorted divided lists
 def merge_sorted(arr1, arr2):
     sorted = []
     i,j =0,0
@@ -20,21 +21,11 @@ def merge_sorted(arr1, arr2):
 
     return sorted
 
-
-
-
-
-
-#
 # l1 = [1,4,6,8,10]
 # l2 = [2,3,5,7,8,9,13,44]
-#
-#
 # merge_sorted(l1, l2);
 
-
-# Iterations:
-
+# Iterations for merge_sorted function:
 # []
 # [1]
 # [1, 2]
@@ -47,7 +38,7 @@ def merge_sorted(arr1, arr2):
 # [1, 2, 3, 4, 5, 6, 7, 8, 8]
 # merged list: [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
 
-
+#Divide
 def divideArr(arr):
     if len(arr) < 2:
         return arr[:]
@@ -61,6 +52,6 @@ def divideArr(arr):
 
 
 
-########## Execution ###########
+########## Main Execution - Divide and Conquer - Merge Sort ###########
 l = [6,8,1,4,10,7,8,9,3,2,5]
 print(divideArr(l))
