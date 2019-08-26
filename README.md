@@ -12,3 +12,10 @@ Sorting Algorithms
 -> Merge Sort ---> O(nlogn)
 
 -> Quick Sort ---> O(n^2)
+
+
+Searching Algorithms
+
+-> Binary Search/ Bisection ---> O(logn)
+
+-> 
