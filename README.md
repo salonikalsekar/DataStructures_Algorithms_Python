@@ -18,4 +18,4 @@ Searching Algorithms
 
 -> Binary Search/ Bisection ---> O(logn)
 
--> 
+-> Hash map search ---> O(1)
