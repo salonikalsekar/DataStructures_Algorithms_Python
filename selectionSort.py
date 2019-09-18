@@ -1,18 +1,19 @@
-def selectionSort(l):
+
+
+def selectionSort(arr):
     marker = 0
-    while marker < len(l):
-        print(l)
-        for j in range(marker, len(l)):
-            if l[marker] > l[j]:
-                l[marker], l[j] = l[j], l[marker]
+    while marker < len(arr):
+        for j in range(marker, len(arr)):
+            if arr[marker] > arr[j]:
+                arr[marker], arr[j]= arr[j], arr[marker]
         marker += 1
-
-
+        print(arr)
 
 
 l = [6,8,1,4,10,7,8,9,3,2,5]
 
 selectionSort(l)
+
 
 
 # Iterations
