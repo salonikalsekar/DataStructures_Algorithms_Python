@@ -39,72 +39,54 @@ def mergeArrays(arr1, arr2):
 l = [6,8,1,4,10,7,8,9,3,2,5]
 print(divideArray(l))
 
-
 # firstPart [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
 # firstPart [6, 8, 1, 4, 10]
 # firstPart [6, 8]
 # secondPart
 # [6] [8]
 # merge [6] [8]
-# sorted [6]
+# sorted [6, 8]
 # firstPart [1, 4, 10]
 # firstPart [4, 10]
 # secondPart
 # [4] [10]
 # merge [4] [10]
-# sorted [4]
+# sorted [4, 10]
 # secondPart
 # [1] [4, 10]
 # merge [1] [4, 10]
-# sorted [1]
+# sorted [1, 4, 10]
 # secondPart
 # [6, 8] [1, 4, 10]
 # merge [6, 8] [1, 4, 10]
-# sorted [1]
-# sorted [1, 4]
-# sorted [1, 4, 6]
-# sorted [1, 4, 6, 8]
+# sorted [1, 4, 6, 8, 10]
 # firstPart [7, 8, 9, 3, 2, 5]
 # firstPart [7, 8, 9]
 # firstPart [8, 9]
 # secondPart
 # [8] [9]
 # merge [8] [9]
-# sorted [8]
+# sorted [8, 9]
 # secondPart
 # [7] [8, 9]
 # merge [7] [8, 9]
-# sorted [7]
+# sorted [7, 8, 9]
 # firstPart [3, 2, 5]
 # firstPart [2, 5]
 # secondPart
 # [2] [5]
 # merge [2] [5]
-# sorted [2]
+# sorted [2, 5]
 # secondPart
 # [3] [2, 5]
 # merge [3] [2, 5]
-# sorted [2]
-# sorted [2, 3]
+# sorted [2, 3, 5]
 # secondPart
 # [7, 8, 9] [2, 3, 5]
 # merge [7, 8, 9] [2, 3, 5]
-# sorted [2]
-# sorted [2, 3]
-# sorted [2, 3, 5]
+# sorted [2, 3, 5, 7, 8, 9]
 # secondPart
 # [1, 4, 6, 8, 10] [2, 3, 5, 7, 8, 9]
 # merge [1, 4, 6, 8, 10] [2, 3, 5, 7, 8, 9]
-# sorted [1]
-# sorted [1, 2]
-# sorted [1, 2, 3]
-# sorted [1, 2, 3, 4]
-# sorted [1, 2, 3, 4, 5]
-# sorted [1, 2, 3, 4, 5, 6]
-# sorted [1, 2, 3, 4, 5, 6, 7]
-# sorted [1, 2, 3, 4, 5, 6, 7, 8]
-# sorted [1, 2, 3, 4, 5, 6, 7, 8, 8]
-# sorted [1, 2, 3, 4, 5, 6, 7, 8, 8, 9]
+# sorted [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
 # [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
-#
-
