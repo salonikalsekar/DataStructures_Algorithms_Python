@@ -20,7 +20,7 @@ def mergeArrays(arr1, arr2):
         else:
             sorted.append(arr2[j])
             j += 1
-        print("sorted", sorted)
+
     while i < len(arr1):
         sorted.append(arr1[i])
         i += 1
@@ -29,7 +29,7 @@ def mergeArrays(arr1, arr2):
     while j < len(arr2):
         sorted.append(arr2[j])
         j += 1
-
+    print("sorted", sorted)
     return sorted
 
 
