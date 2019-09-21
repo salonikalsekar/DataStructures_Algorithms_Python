@@ -1,28 +1,21 @@
 def binarySearch_recur(n, arr, start, end):
     if start > end:
-        return f"{n} not found"
+        return "not found"
 
+    mid = (start + end) // 2
+    if arr[mid] == n:
+        return f"{n} found at position {mid}"
+    elif arr[mid] < n:
+        return binarySearch_recur(n, arr, mid + 1, end)
     else:
-        middle = (start + end) // 2
-        if n == arr[middle]:
-            return f"{n} found at {middle}"
-        elif n > arr[middle]:
-            return binarySearch_recur(searchNum, arr, middle + 1, end)
-        else:
-            return binarySearch_recur(searchNum, arr, start, middle - 1)
+        return binarySearch_recur(n, arr, start, mid - 1)
 
 
-# to test various array size
-def createList(maxValue):
-    arr = []
-    for num in range(1, maxValue):
-        arr.append(num)
 
-    return arr
 
-l = createList(10)
+l = [1,2,3,4,5,6,7,8,9,10]
 
-searchNum = 9
+searchNum = 5
 print(binarySearch_recur(searchNum, l, 0, len(l) - 1))
 
 
