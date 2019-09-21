@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ec2e31-0eb3-4998-8c4f-189aaeda4d83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hashTableAlgo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hashTableAlgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/hashTableAlgo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566355067290</updated>
-      <workItem from="1568922867289" duration="12382000" />
+      <workItem from="1568922867289" duration="13876000" />
     </task>
     <servers />
   </component>
@@ -214,7 +214,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$mergeSort.coverage" NAME="mergeSort Coverage Results" MODIFIED="1568941481806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$hashTableAlgo__1_.coverage" NAME="hashTableAlgo (1) Coverage Results" MODIFIED="1569086892308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$hashTableAlgo__1_.coverage" NAME="hashTableAlgo (1) Coverage Results" MODIFIED="1569088864793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$quickSort.coverage" NAME="quickSort Coverage Results" MODIFIED="1568950183835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$binarySearch.coverage" NAME="binarySearch Coverage Results" MODIFIED="1569035261229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$hashTableAlgo.coverage" NAME="hashTableAlgo Coverage Results" MODIFIED="1569086835605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Runtime_Analyser" />
