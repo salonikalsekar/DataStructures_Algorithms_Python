@@ -1,31 +1,22 @@
 def binarySearch(n, arr):
     start = 0
     end = len(arr) - 1
-
-    while start<=end:
-        middle = (start + end) // 2
-        if n == arr[middle]:
-            return f"{n} found at {middle}"
-        elif n > arr[middle]:
-            start = middle + 1
+    while start <= end:
+        mid = (start + end) // 2
+        if arr[mid] == n:
+            return f"{n} found at {mid}"
+        elif arr[mid] < n:
+            start = mid + 1
         else:
-            end = middle - 1
-    return f"{n} Not found"
+            end= mid - 1
+    return f"{n} not found"
 
-
-# to test various array size
-def createList(maxValue):
-    arr = []
-    for num in range(1, maxValue):
-        arr.append(num)
-
-    return arr
 
 l = [1,2,3,4,5,6,7,8,9,10]
 
-searchNum = -1
+searchNum = 11
 print(binarySearch(searchNum, l))
 
 
 
-# we do not create slice array bcz it creates a new copy everytime and we need the idex in the original list of the value to be searched
+# we do not create slice array bcz it creates a new copy everytime and we need the index in the original list of the value to be searched
