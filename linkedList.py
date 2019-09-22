@@ -85,6 +85,22 @@ class LinkedList:
     #     self.head.next = None
     #     return "deleted"
 
+    ############################################REVERSE LINKED LIST########################################
+    def reverseLinkedList(self, current, previous):
+        if self.head is None:
+            return "Empty list"
+
+        elif current.next is None:
+            next = current.next
+            current.next = previous
+            self.head = current
+
+        else:
+            next = current.next
+            current.next = previous
+            self.reverseLinkedList(next, current)
+
+
 node1 = Node(1)
 node2 = Node(2)
 node3 = Node(3)
@@ -100,7 +116,7 @@ mylist.appendValue(node3)
 mylist.appendValue(node4)
 mylist.appendValue(node5)
 
-print(mylist)
+# print(mylist)
 
 # count the number of elements in the linkedlist
 # count = mylist.length()
@@ -119,5 +135,11 @@ print(mylist)
 # print(mylist.deleteStartElement())
 # print(mylist)
 
-print(mylist.deleteLastElement())
+# print(mylist.deleteLastElement())
+# print(mylist)
+
+
+
+
+mylist.reverseLinkedList(mylist.head, None)
 print(mylist)
