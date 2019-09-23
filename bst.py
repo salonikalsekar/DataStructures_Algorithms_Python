@@ -61,6 +61,22 @@ class BST:
             self._post_order(curr.left_child)
             self._post_order(curr.right_child)
 
+    def find_val(self, val):
+        return self._find_val(self.root, val)
+
+    def _find_val(self, curr, key):
+        if curr:
+            if key == curr.data:
+                return "Found the value in tree"
+            elif key < curr.data:
+                return self._find_val(curr.left_child, key)
+            else:
+                return self._find_val(curr.right_child, key)
+
+        return "not found in the tree"
+
+
+
 
 tree = BST()
 
@@ -99,8 +115,11 @@ tree.insert('L')
 # tree.insert("B")
 # tree.insert("K")
 # tree.insert("E")
-tree.in_order()
+# tree.in_order()
+#
+# tree.pre_order()
+#
+# tree.post_order()
 
-tree.pre_order()
-
-tree.post_order()
+print(tree.find_val('E'))
+print(tree.find_val('Z'))
