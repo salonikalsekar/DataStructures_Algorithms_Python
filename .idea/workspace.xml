@@ -189,7 +189,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566355067290</updated>
-      <workItem from="1568922867289" duration="28989000" />
+      <workItem from="1568922867289" duration="32902000" />
+      <workItem from="1569449074637" duration="3348000" />
     </task>
     <servers />
   </component>
@@ -210,7 +211,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -227,7 +230,7 @@
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$binarySearch.coverage" NAME="binarySearch Coverage Results" MODIFIED="1569035261229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$reverseLinkedlist.coverage" NAME="reverseLinkedlist Coverage Results" MODIFIED="1569174673390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$hashTableAlgo.coverage" NAME="hashTableAlgo Coverage Results" MODIFIED="1569086835605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Runtime_Analyser" />
-    <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$bst.coverage" NAME="bst Coverage Results" MODIFIED="1569196927442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$bst.coverage" NAME="bst Coverage Results" MODIFIED="1569453886148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataStructures_Algorithms_Python$binarySearch_recursion.coverage" NAME="binarySearch_recursion Coverage Results" MODIFIED="1569035299049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
