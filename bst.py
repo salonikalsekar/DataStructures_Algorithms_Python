@@ -75,17 +75,30 @@ class BST:
 
         return "not found in the tree"
 
+    def min_right_subtree(self, curr):
+        if curr.left_child == None:
+            return curr
+        else:
+            return self.min_right_subtree(curr.left_child)
+
     def delete_val(self, key):
         return self._delete_val(self.root, None, None, key)
 
     def _delete_val(self, curr, prev, is_left, key):
         if curr:
             if key == curr.data:
+                if curr.left_child and curr.right_child:
+                    min_child = self.min_right_subtree(curr.right_child)
+                    curr.data = min_child.data
+                    self._delete_val(curr.right_child, curr, False, min_child.data)
                 if curr.left_child == None  and curr.right_child == None:
-                    if is_left:
-                        prev.left_child = None
+                    if prev:
+                        if is_left:
+                            prev.left_child = None
+                        else:
+                            prev.right_child = None
                     else:
-                        prev.right_child = None
+                        self.root = None
                 elif curr.left_child == None:
                     if prev:
                         if is_left:
@@ -93,7 +106,7 @@ class BST:
                         else:
                             prev.right_child = curr.right_child
                     self.root = curr.right_child
-                elif curr.right_child == None:
+                else:
                     if prev:
                         if is_left:
                             prev.left_child = curr.left_child
@@ -114,26 +127,22 @@ class BST:
 tree = BST()
 
 tree.insert('F')
-# tree.insert('C')
 tree.insert('C')
+tree.insert('G')
+tree.insert('A')
+tree.insert('B')
+tree.insert('K')
+tree.insert('H')
+tree.insert('E')
+tree.insert('D')
+tree.insert('I')
+tree.insert('M')
+tree.insert('J')
+tree.insert('L')
 tree.in_order()
 # delete
-
-tree.delete_val('C')
+tree.delete_val('F')
 tree.in_order()
-
-# tree.insert('G')
-# tree.insert('A')
-# tree.insert('B')
-# tree.insert('K')
-# tree.insert('H')
-# tree.insert('E')
-# tree.insert('D')
-# tree.insert('I')
-# tree.insert('M')
-# tree.insert('J')
-# tree.insert('L')
-
 # print(tree.root.data)
 # print(tree.root.left_child.data)
 # print(tree.root.right_child.data)
