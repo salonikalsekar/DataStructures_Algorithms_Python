@@ -76,14 +76,14 @@ class LinkedList:
             self.head = self.head.next
             return "Done"
 
-    # def deleteLastElement(self):
-    #     if self.head == None:
-    #         return "Empty list"
-    #     while self.head.next.next != None:
-    #         self.head = self.head.next
-    #     print(self.head.next)
-    #     self.head.next = None
-    #     return "deleted"
+    def deleteLastElement(self):
+        if self.head == None:
+            return "Empty list"
+        while self.head.next.next != None:
+            self.head = self.head.next
+        print(self.head.next)
+        self.head.next = None
+        return "deleted"
 
     ############################################REVERSE LINKED LIST########################################
     def reverseLinkedList(self, current, previous):
@@ -135,11 +135,11 @@ mylist.appendValue(node5)
 # print(mylist.deleteStartElement())
 # print(mylist)
 
-# print(mylist.deleteLastElement())
-# print(mylist)
-
-
-
-
-mylist.reverseLinkedList(mylist.head, None)
+print(mylist.deleteLastElement())
 print(mylist)
+
+
+
+#
+# mylist.reverseLinkedList(mylist.head, None)
+# print(mylist)

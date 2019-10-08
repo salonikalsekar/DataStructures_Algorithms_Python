@@ -3,14 +3,102 @@ class Node:
         self.data = data
         self.next = None
 
+    def __str__(self):
+        return f"{self.data}"
 
-class LinkedList:
+class linkedList:
     def __init__(self):
         self.head = None
         self.tail = None
 
+    def __str__(self):
+        listPrint = ""
+        curr = self.head
+        while curr is not None:
+            listPrint = listPrint + str(curr.data) + "->"
+            curr = curr.next
+        if listPrint:
+            return "[" + listPrint[:-2] + "]"
+        else:
+            return "[]"
 
 
+    def appendValue(self, newData):
+        if not isinstance(newData, Node):
+            newData = Node(newData)
+        if self.head == None:
+            self.head = newData
+        else:
+            self.tail.next = newData
+        self.tail = newData
 
-node1 = Node(1)
-print(node1.data)
+
+    def addToStart(self, newData):
+        if not isinstance(newData, Node):
+            newData = Node(newData)
+        if self.head == None:
+            self.head = newData
+        else:
+            newData.next = self.head
+            self.head = newData
+
+    def length(self):
+        count = 0
+        while self.head != None:
+            self.head = self.head.next
+            count += 1
+        return count
+
+    def searchValue(self, searchData):
+        while self.head != None:
+            if self.head.data == searchData:
+                return f"Found"
+            self.head = self.head.next
+        return "not found"
+
+    def deleteElement(self, deldata):
+        if self.head == None:
+            return "Empty list"
+        while self.head != None:
+            if self.head.data == deldata:
+                self.head = self.head.next
+                return "Deleted"
+            self.head = self.head.next
+
+        return "Not found"
+
+
+    def deletestart(self):
+        if self.head == None:
+            return "none"
+        else:
+            self.head = self.head.next
+            return "Done"
+
+    def deleteEnd(self):
+        if self.head == None:
+            return "empty"
+        else:
+            curr = self.head
+            while curr.next.next != None:
+                curr = curr.next
+            curr.next = None
+            return "deleted"
+
+    def reverseLinkedList(self):
+        pass
+
+n1 = Node(1)
+
+
+linkedlist = linkedList()
+linkedlist.appendValue(1)
+linkedlist.appendValue(9)
+linkedlist.addToStart(8)
+
+# count = linkedlist.length()
+print(linkedlist)
+
+
+print(linkedlist.deleteEnd())
+print(linkedlist)
