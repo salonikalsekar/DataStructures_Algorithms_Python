@@ -85,11 +85,20 @@ class linkedList:
             curr.next = None
             return "deleted"
 
-    def reverseLinkedList(self):
-        pass
+    def reverseLinkedList(self, curr, prev):
+        if curr is None:
+            return "empty"
+        elif curr.next == None:
+            next = curr.next
+            curr.next = prev
+            self.head = curr
+        else:
+            next = curr.next
+            curr.next = prev
+            self.reverseLinkedList(next, curr)
+
 
 n1 = Node(1)
-
 
 linkedlist = linkedList()
 linkedlist.appendValue(1)
@@ -98,7 +107,11 @@ linkedlist.addToStart(8)
 
 # count = linkedlist.length()
 print(linkedlist)
+#
+#
+# print(linkedlist.deleteEnd())
+# print(linkedlist)
 
+linkedlist.reverseLinkedList(linkedlist.head,None)
 
-print(linkedlist.deleteEnd())
 print(linkedlist)
