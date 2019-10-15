@@ -1,133 +1,88 @@
 class Node:
     def __init__(self, key):
-        self.data = key
         self.left_child = None
         self.right_child = None
+        self.data = key
 
 
 class BST:
     def __init__(self):
         self.root = None
 
+    def __insert(self, curr, key):
+        if key.data < curr.data:
+            if curr.left_child == None:
+                curr.left_child = key
+            else:
+                self.__insert(curr.left_child, key)
+        elif key.data > curr.data:
+            if curr.right_child == None:
+                curr.right_child = key
+            else:
+                self.__insert(curr.right_child, key)
+
     def insert(self, key):
         if not isinstance(key, Node):
             key = Node(key)
         if self.root == None:
             self.root = key
+
         else:
-            self._insert(self.root, key)
+            self.__insert(self.root, key)
 
-    def _insert(self, curr, key):
-        if key.data < curr.data:
-            if curr.left_child == None:
-                curr.left_child = key
-            else:
-                self._insert(curr.left_child, key)
-        elif key.data > curr.data:
-            if curr.right_child == None:
-                curr.right_child = key
-            else:
-                self._insert(curr.right_child, key)
+    def inorder(self):
+        self.__inorder(self.root)
+        print("")
 
-    def in_order(self):
-        # l-root-r
-        self._in_order(self.root)
-        print()
-
-    def _in_order(self, curr):
+    def __inorder(self, curr):
         if curr:
-            self._in_order(curr.left_child)
+            self.__inorder(curr.left_child)
             print(curr.data, end=" ")
-            self._in_order(curr.right_child)
+            self.__inorder(curr.right_child)
 
-    def pre_order(self):
-        self._pre_order(self.root)
-        print()
+    def postorder(self):
+        self.__postorder(self.root)
+        print("")
 
-    def _pre_order(self, curr):
+    def __postorder(self, curr):
         if curr:
-            self._pre_order(curr.left_child)
-            self._pre_order(curr.right_child)
+            self.__postorder(curr.left_child)
+            self.__postorder(curr.right_child)
             print(curr.data, end = " ")
 
-    def post_order(self):
-        self._post_order(self.root)
-        print()
+    def preorder(self):
+        self.__preorder(self.root)
+        print("")
 
-
-    def _post_order(self, curr):
+    def __preorder(self, curr):
         if curr:
             print(curr.data, end=" ")
-            self._post_order(curr.left_child)
-            self._post_order(curr.right_child)
+            self.__preorder(curr.left_child)
+            self.__preorder(curr.right_child)
 
-    def find_val(self, val):
-        return self._find_val(self.root, val)
 
-    def _find_val(self, curr, key):
+    def findvalue(self, key):
+        self.__findvalue(self.root, key)
+
+    def __findvalue(self, curr, key):
         if curr:
             if key == curr.data:
-                return "Found the value in tree"
+                print("found")
             elif key < curr.data:
-                return self._find_val(curr.left_child, key)
+                self.__findvalue(curr.left_child, key)
             else:
-                return self._find_val(curr.right_child, key)
-
-        return "not found in the tree"
-
-    def min_right_subtree(self, curr):
-        if curr.left_child == None:
-            return curr
-        else:
-            return self.min_right_subtree(curr.left_child)
-
-    def delete_val(self, key):
-        return self._delete_val(self.root, None, None, key)
-
-    def _delete_val(self, curr, prev, is_left, key):
-        if curr:
-            if key == curr.data:
-                if curr.left_child and curr.right_child:
-                    min_child = self.min_right_subtree(curr.right_child)
-                    curr.data = min_child.data
-                    self._delete_val(curr.right_child, curr, False, min_child.data)
-                if curr.left_child == None  and curr.right_child == None:
-                    if prev:
-                        if is_left:
-                            prev.left_child = None
-                        else:
-                            prev.right_child = None
-                    else:
-                        self.root = None
-                elif curr.left_child == None:
-                    if prev:
-                        if is_left:
-                            prev.left_child = curr.right_child
-                        else:
-                            prev.right_child = curr.right_child
-                    self.root = curr.right_child
-                else:
-                    if prev:
-                        if is_left:
-                            prev.left_child = curr.left_child
-                        else:
-                            prev.right_child = curr.left_child
-                    self.root = curr.left_child
-
-            elif key < curr.data:
-                self._delete_val(curr.left_child, curr, True, key)
-            elif key> curr.data:
-                self._delete_val(curr.right_child, curr, False, key)
+                self.__findvalue(curr.right_child, key)
 
         else:
-            print(f"{key} not found")
-
+            print("not found")
 
 
 tree = BST()
-
 tree.insert('F')
+
+print(tree.root.data)
 tree.insert('C')
+print(tree.root.left_child.data)
 tree.insert('G')
 tree.insert('A')
 tree.insert('B')
@@ -139,36 +94,10 @@ tree.insert('I')
 tree.insert('M')
 tree.insert('J')
 tree.insert('L')
-tree.in_order()
-# delete
-tree.delete_val('F')
-tree.in_order()
-# print(tree.root.data)
-# print(tree.root.left_child.data)
-# print(tree.root.right_child.data)
-# print(tree.root.left_child.left_child.data)
-# print(tree.root.left_child.left_child.right_child.data)
-# print(tree.root.right_child.data)
-# print(tree.root.right_child.right_child.data)
-# print(tree.root.right_child.right_child.left_child.data)
-# tree.insert("H")
-# tree.insert("D")
-# tree.insert("I")
-# tree.insert("M")
-# tree.insert("J")
-# tree.insert("L")
-# tree.insert("F")
-# tree.insert("C")
-# tree.insert("G")
-# tree.insert("A")
-# tree.insert("B")
-# tree.insert("K")
-# tree.insert("E")
-#
-# tree.pre_order()
-#
-# tree.post_order()
 
-# print(tree.find_val('E'))
-# print(tree.find_val('Z'))
+tree.inorder()
+tree.postorder()
+tree.preorder()
 
+
+tree.findvalue('Z')
