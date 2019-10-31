@@ -5,14 +5,10 @@ def bubbleSort(arr):
     while swap == True:
         swap = False
         for i in range(len(arr) - 1):
-            print(i)
             if arr[i] > arr [i+1]:
                 arr[i], arr[i+1]= arr[i+1] , arr[i]
                 swap = True
         print(arr)
-
-
-
 
 
 l = [6,8,1,4,10,7,8,9,3,2,5]

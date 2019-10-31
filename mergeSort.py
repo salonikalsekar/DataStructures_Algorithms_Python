@@ -20,20 +20,14 @@ def mergeArrays(arr1, arr2):
         else:
             sorted.append(arr2[j])
             j += 1
-
     while i < len(arr1):
         sorted.append(arr1[i])
         i += 1
-
-
     while j < len(arr2):
         sorted.append(arr2[j])
         j += 1
     print("sorted", sorted)
     return sorted
-
-
-
 
 ########## Main Execution - Divide and Conquer - Merge Sort ###########
 l = [6,8,1,4,10,7,8,9,3,2,5]

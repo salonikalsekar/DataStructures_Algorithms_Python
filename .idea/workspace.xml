@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ec2e31-0eb3-4998-8c4f-189aaeda4d83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/random1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reverseString.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bubbleSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/bubbleSort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertionSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/insertionSort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mergeSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/mergeSort.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +64,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.random5">
-    <configuration name="bst" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.random_test">
+    <configuration name="insertionSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,8 +77,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bst.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/insertionSort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +86,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mergeSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,8 +98,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mergeSort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="random" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,8 +119,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="random_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,8 +140,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reverseString" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="selectionSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,8 +161,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reverseString.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/selectionSort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.random5" />
-        <item itemvalue="Python.random3" />
-        <item itemvalue="Python.reverseString" />
-        <item itemvalue="Python.random1" />
-        <item itemvalue="Python.bst" />
+        <item itemvalue="Python.random_test" />
+        <item itemvalue="Python.random" />
+        <item itemvalue="Python.mergeSort" />
+        <item itemvalue="Python.insertionSort" />
+        <item itemvalue="Python.selectionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +197,10 @@
       <workItem from="1570926553826" duration="12857000" />
       <workItem from="1571717278678" duration="1681000" />
       <workItem from="1571719233014" duration="1645000" />
-      <workItem from="1571722568174" duration="220000" />
+      <workItem from="1571722568174" duration="749000" />
+      <workItem from="1571855914077" duration="1059000" />
+      <workItem from="1571887993606" duration="174000" />
+      <workItem from="1571890141269" duration="530000" />
     </task>
     <servers />
   </component>
