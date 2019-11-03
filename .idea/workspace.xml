@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ec2e31-0eb3-4998-8c4f-189aaeda4d83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graph_adjacency_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph_adjacency_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/945_minimum_increment_to_make_array_unique.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_balanced_sales_array" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unique_twitter_user_set.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.graph_adjacency_matrix">
+  <component name="RunManager" selected="Python.random_balanced_sales_array">
     <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="random_balanced_sales_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_balanced_sales_array" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.random_balanced_sales_array" />
         <item itemvalue="Python.graph_adjacency_matrix" />
         <item itemvalue="Python.graph_adjacency_list" />
         <item itemvalue="Python.graph" />
         <item itemvalue="Python.random_test" />
-        <item itemvalue="Python.random" />
       </list>
     </recent_temporary>
   </component>
