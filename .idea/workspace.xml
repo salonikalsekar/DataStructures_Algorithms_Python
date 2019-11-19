@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ec2e31-0eb3-4998-8c4f-189aaeda4d83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/945_minimum_increment_to_make_array_unique.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random_balanced_sales_array" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unique_twitter_user_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bst_delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery_question_matrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job_processing_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/945_minimum_increment_to_make_array_unique.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +64,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.random_balanced_sales_array">
+  <component name="RunManager" selected="Python.delivery_question_matrix">
+    <configuration name="delivery_question_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataStructures_Algorithms_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/delivery_question_matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DataStructures_Algorithms_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,34 +170,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DataStructures_Algorithms_Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.delivery_question_matrix" />
         <item itemvalue="Python.random_balanced_sales_array" />
         <item itemvalue="Python.graph_adjacency_matrix" />
         <item itemvalue="Python.graph_adjacency_list" />
         <item itemvalue="Python.graph" />
-        <item itemvalue="Python.random_test" />
       </list>
     </recent_temporary>
   </component>
@@ -200,15 +203,6 @@
       <workItem from="1571890141269" duration="530000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
