@@ -2,7 +2,6 @@
 def path(mat):
      q = []
      q.append((0, set().add(0)))
-     count = 0
      while q:
          curr, vis = q.pop()
          print(len(mat[curr]))

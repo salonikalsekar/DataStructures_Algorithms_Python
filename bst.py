@@ -77,12 +77,67 @@ class BST:
             print("not found")
 
 
+    def min_subtree_right(self, curr):
+        print("testing")
+        print(curr.data)
+        if curr.left_child == None:
+            return curr
+        else:
+            return self.min_subtree_right(curr.left_child)
+
+
+    def delete(self, key):
+        self._delete(self.root, None, None, key)
+
+    def _delete(self, curr, prev, is_left,  key):
+
+        if curr:
+            if curr.data == key:
+                if curr.left_child and curr.right_child:
+                    min_child = self.min_subtree_right(curr.right_child)
+                    curr.data = min_child.data
+                    self._delete(curr.right_child, curr, False, min_child.data)
+                elif curr.left_child == None and curr.right_child == None:
+                    if prev:
+                        if is_left:
+                            prev.left_child = None
+                        else:
+                            prev.right_child = None
+                    else:
+                        self.root = None
+
+                elif curr.left_child == None:
+                    if prev:
+                        if is_left:
+                            prev.left_child = curr.right_child
+                        else:
+                            prev.right_child = curr.right_child
+                    else:
+                        self.root = curr.right_child
+
+                else:
+                    if prev:
+                        if is_left:
+                            prev.left_child = curr.left_child
+                        else:
+                            prev.right_child = curr.left_child
+                    else:
+                        self.root = curr.left_child
+
+            elif key < curr.data:
+                self._delete(curr.left_child, curr, True,  key)
+            elif key>curr.data:
+                self._delete(curr.right_child, curr, False,  key)
+
+        else:
+            print("key not found")
+
 tree = BST()
 tree.insert('F')
 
-print(tree.root.data)
+# print(tree.root.data)
 tree.insert('C')
-print(tree.root.left_child.data)
+# print(tree.root.left_child.data)
 tree.insert('G')
 tree.insert('A')
 tree.insert('B')
@@ -94,10 +149,13 @@ tree.insert('I')
 tree.insert('M')
 tree.insert('J')
 tree.insert('L')
+print(tree.inorder())
+tree.delete('K')
+print(tree.inorder())
+# tree.inorder()
+# tree.postorder()
+# tree.preorder()
 
-tree.inorder()
-tree.postorder()
-tree.preorder()
+# tree.findvalue('Z')
 
 
-tree.findvalue('Z')
