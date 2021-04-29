@@ -61,6 +61,21 @@ class BST:
     def postorder(self):
         self.__postorder(self.root)
 
+    def search(self, key):
+        self.__search(self.root, key)
+
+    def __search(self, curr, key):
+        if curr:
+            if key == curr.data:
+                print('Found')
+            elif key < curr.data:
+                self.__search(curr.left_child, key)
+            else:
+                self.__search(curr.right_child, key)
+        else:
+            print('not found')
+
+
 
 
 tree = BST()
@@ -80,5 +95,8 @@ tree.insert("E")
 
 
 # tree.inorder()
-tree.preorder()
+# tree.preorder()
 # tree.postorder()
+
+
+tree.search('Z')
