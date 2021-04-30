@@ -42,19 +42,17 @@ class BST:
 
     def __preorder(self, curr):
         if curr:
-            print()
             print(curr.data, end=" ")
             self.__preorder(curr.left_child)
             self.__preorder(curr.right_child)
 
     def inorder(self):
-        self.__postorder(self.root)
+        self.__inorder(self.root)
 
     def __postorder(self, curr):
         if curr:
             self.__postorder(curr.left_child)
             self.__postorder(curr.right_child)
-            print()
             print(curr.data, end=" ")
 
 
@@ -76,15 +74,58 @@ class BST:
             print('not found')
 
 
+    def delete(self, key):
+        self.__delete(key, self.root, None, None)
+
+    def findMinRight(self, curr):
+        if curr.left_child:
+            return self.findMinRight(curr.left_child)
+        else:
+            return curr
+
+
+    def __delete(self, key, curr, prev, is_left):
+        if key == curr.data:
+            if curr.left_child and curr.right_child:
+                minNode =  self.findMinRight(curr.right_child)
+                curr.data = minNode.data
+                self.__delete(minNode.data, curr.right_child, curr, False)
+            if curr.left_child == None and curr.right_child == None:
+                if prev:
+                    if is_left:
+                        prev.left_child = None
+                    else:
+                        prev.right_child = None
+                else:
+                    self.root = None
+            elif curr.left_child == None:
+                if prev:
+                    if is_left:
+                        prev.left_child = curr.right_child
+                    else:
+                        prev.right_child = curr.right_child
+                else:
+                    self.root = curr.right_child
+
+            elif curr.right_child == None:
+                if prev:
+                    if is_left:
+                        prev.left_child = curr.left_child
+                    else:
+                        prev.right_child = curr.left_child
+                else:
+                    self.root = curr.left_child
+
+        elif key > curr.data:
+            self.__delete(key, curr.right_child, curr, False)
+        elif key < curr.data:
+            self.__delete(key, curr.left_child, curr, True)
+
+
+
 
 
 tree = BST()
-tree.insert("H")
-tree.insert("D")
-tree.insert("I")
-tree.insert("M")
-tree.insert("J")
-tree.insert("L")
 tree.insert("F")
 tree.insert("C")
 tree.insert("G")
@@ -92,6 +133,12 @@ tree.insert("A")
 tree.insert("B")
 tree.insert("K")
 tree.insert("E")
+tree.insert("H")
+tree.insert("D")
+tree.insert("I")
+tree.insert("M")
+tree.insert("J")
+tree.insert("L")
 
 
 # tree.inorder()
@@ -99,4 +146,9 @@ tree.insert("E")
 # tree.postorder()
 
 
-tree.search('Z')
+# tree.search('Z')
+
+tree.inorder()
+tree.delete('A')
+print('inorder')
+tree.inorder()
