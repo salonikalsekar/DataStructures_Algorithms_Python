@@ -121,10 +121,6 @@ class BST:
         elif key < curr.data:
             self.__delete(key, curr.left_child, curr, True)
 
-
-
-
-
 tree = BST()
 tree.insert("F")
 tree.insert("C")
